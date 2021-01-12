@@ -30,9 +30,9 @@
         </div>
         <div class="bottom-section">
             <ul>
-                <li><i class="bi bi-house-door-fill"></i><a href="/dashboard.php">DASHBOARD</a></li>
-                <li><i class="bi bi-input-cursor-text"></i><a href="/student-input.php">STUDENT INPUT</a></li>
-                <li><i class="bi bi-clipboard-check"></i><a href="/report.php">REPORT</a></li>
+                <li><i class="bi bi-house-door-fill"></i><a href="dashboard.php">DASHBOARD</a></li>
+                <li><i class="bi bi-input-cursor-text"></i><a href="student-input.php">STUDENT INPUT</a></li>
+                <li><i class="bi bi-clipboard-check"></i><a href="report.php">REPORT</a></li>
             </ul>
 
         </div>

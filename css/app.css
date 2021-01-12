@@ -89,13 +89,13 @@
   padding-top: 16px;
 }
 .side-nav .bottom-section ul {
-  padding-left: 16px;
+  padding-left: 0px;
   list-style: none;
   text-decoration: none;
   cursor: default;
 }
 .side-nav .bottom-section ul li {
-  padding: 16px 0px;
+  padding: 16px 8px;
 }
 .side-nav .bottom-section ul li a {
   text-decoration: none;
@@ -145,5 +145,4 @@
 }
 .top-nav {
   background-color: #1A262B;
-  
 }
