@@ -53,7 +53,7 @@
             </div>
             <div class="info-region">
                 <div class="landing-region" style="padding: 32px;">
-                    <form action="/php/mark-processor.php" method="get">
+                    <form action="php/mark.processor.php" method="GET">
                         <div class="input-section-menu">
                             <h5 class="">Select Course</h5>
                             <select class="form-select form-control" id="selectCourse" aria-label="Default select example">
@@ -134,20 +134,20 @@
                             <!-- <div class="input-group-prepend">
                                 <span class="input-group-text" id="">Course Outcomes</span>
                             </div> -->
-                            <input type="text" maxlength="2" pattern="[0-9]*" placeholder="Q1 - CO1" class="form-control">
-                            <input type="text" maxlength="2" placeholder="Q2 - CO1" class="form-control">
-                            <input type="text" maxlength="2" placeholder="Q3 - CO2" class="form-control">
-                            <input type="text" maxlength="2" placeholder="Q4 - CO3" class="form-control">
+                            <input type="text" maxlength="2" pattern="[0-9]*" placeholder="Q1 - CO1" id="finalQ1" class="form-control">
+                            <input type="text" maxlength="2" placeholder="Q2 - CO1" id="finalQ2" class="form-control">
+                            <input type="text" maxlength="2" placeholder="Q3 - CO2" id="finalQ3" class="form-control">
+                            <input type="text" maxlength="2" placeholder="Q4 - CO3" id="finalQ4" class="form-control">
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="input-group pt-3">
-                                    <input type="text" maxlength="3" placeholder="Final Term Total" class="form-control">
+                                    <input type="text" maxlength="3" placeholder="Final Term Total" id="finalTermTotal" class="form-control">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="input-group pt-3">
-                                    <input type="text" maxlength="3" placeholder="FinalTerm Total Converted" class="form-control">
+                                    <input type="text" maxlength="3" placeholder="FinalTerm Total Converted" id="finalTermConverted" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -156,19 +156,19 @@
                             <!-- <div class="input-group-prepend">
                                 <span class="input-group-text" id="">Course Outcomes</span>
                             </div> -->
-                            <input type="text" maxlength="2" pattern="[0-9]*" placeholder="Lab - CO4" class="form-control">
-                            <input type="text" maxlength="2" placeholder="Project Work" class="form-control">
-                            <input type="text" maxlength="2" placeholder="Project Work Total" class="form-control">
+                            <input type="text" maxlength="2" pattern="[0-9]*" placeholder="Lab - CO4" id="labCO4" class="form-control">
+                            <input type="text" maxlength="2" placeholder="Project Work" id="projectWork" class="form-control">
+                            <input type="text" maxlength="2" placeholder="Project Work Total" id="projectWorkTotal" class="form-control">
                         </div>
                         <h5 class="pt-3">Course Outcome - Total</h5>
                         <div class="input-group pt-3">
                             <!-- <div class="input-group-prepend">
                                 <span class="input-group-text" id="">Course Outcomes</span>
                             </div> -->
-                            <input type="text" maxlength="3" pattern="[0-9]*" placeholder="CO1" class="form-control">
-                            <input type="text" maxlength="3" placeholder="CO2" class="form-control">
-                            <input type="text" maxlength="3" placeholder="CO3" class="form-control">
-                            <input type="text" maxlength="3" placeholder="CO4" class="form-control">
+                            <input type="text" maxlength="3" pattern="[0-9]*" placeholder="CO1" id="TotalCO1" class="form-control">
+                            <input type="text" maxlength="3" placeholder="CO2" id="TotalCO2" class="form-control">
+                            <input type="text" maxlength="3" placeholder="CO3" id="TotalCO3" class="form-control">
+                            <input type="text" maxlength="3" placeholder="CO4" id="TotalCO4" class="form-control">
                         </div>
                         <div class="submit-btn" style="float: right; margin-top: 32px;">
                             <button type="submit" class="btn-secondary" style="width: 100px; height: 32px; border: none; border-radius: 5px;">SUBMIT</button>
