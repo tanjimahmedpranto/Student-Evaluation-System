@@ -4,7 +4,7 @@ include './include/connection.php';
 $studentInfoTable = "CREATE TABLE studentinfo (  
         selectCourse VARCHAR(255) NOT NULL,
         studentID INT NOT NULL PRIMARY KEY UNIQUE, 
-        courseID INT NOT NULL, 
+        courseID VARCHAR(255) NOT NULL, 
         section INT NOT NULL,
         semester VARCHAR(255) NOT NULL,
         totalCO1 INT NOT NULL,
@@ -15,8 +15,28 @@ $studentInfoTable = "CREATE TABLE studentinfo (
 
 if ($conn->query($studentInfoTable) === TRUE) {
     echo "Table 'studentInfoTable' created successfully<br>";
+    header("Location: ../tableForm.php?success=true");
 } else {
     echo "Error creating studentInfoTable table: " . $conn->error . "<br>";
+    header("Location: ../tableForm.php?success=false");
 }
 
 $conn->close();
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        window.location.replace("http://localhost/stdtmg/tableForm.php");
+    </script>
+    <title>Dashboard</title>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -2,6 +2,7 @@
 include 'components/header.php';
 include 'components/sidenav.php';
 include './php/fetchData.php';
+
 ?>
 
 <div class="right-section">
@@ -40,7 +41,7 @@ include './php/fetchData.php';
                     <div class="col-sm-3">
                         <div class="card shadow">
                             <div class="card-body" style="background-color: #7030A0;">
-                                <h5 class="card-title text-white"># of PLO:</h5>
+                                <h5 class="card-title text-white"># of PLO: 13</h5>
                                 <p class="card-text text-white">Achieved so far: </p>
                             </div>
                         </div>
@@ -64,5 +65,4 @@ include './php/fetchData.php';
         </div>
     </div>
 </div>
-
 <?php include 'components/footer.php' ?>
